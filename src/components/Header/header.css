@@ -19,21 +19,32 @@
 
 .Header {
     display: flex;
-    justify-content: space-evenly;
-    height: 50px;
+    justify-content: space-between;
+    height: 115px;
     font-size: 30px;
     box-shadow: 5px 5px 20px 5px;
     background-color: inherit;
+    align-items: center;
     
 }
 
 .Header div {
     /* border-radius: 8px; */
-    text-shadow: 0 0 3px #111010, 0 0 5px #0000FF;
+    /* text-shadow: 0 0 3px #111010, 0 0 5px #0000FF; */
     /* height: 40px;  */
     /* box-shadow: 1px 1px 5px 1px;  */
+    
     padding: 3px; 
     background-color: inherit;
+}
+.no-decoration {
+    text-decoration: none;
+}
+
+link {
+    text-decoration: none;
+    color: brown;
+    background-color: aqua;
 }
 
 
@@ -57,5 +68,32 @@
     transform: scale(1.05);
     transition: transform 0.2s ease; 
 }
+.kidsAreaLogo {
+    height:67px;
+    width: 382px;
+    background-image: url(../image/kidsAreaLogo.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+.GeoFlag {
+    background: url(../image/g887.png) no-repeat;
+    background-size: cover;
+}
+
+.UsaFlag {
+    background: url(../image/197374.png) no-repeat;
+    background-size: cover;
+}
+
+.GeoFlag:hover, .UsaFlag:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease; 
+}
+
+/* .unvisible {
+    display: none;
+} */
 
 

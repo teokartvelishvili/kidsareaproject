@@ -5,6 +5,7 @@ import {
     StyledSignInScreenWrapper,
     StyledDiv
   } from "./signIn.styled";
+  import { Link } from "react-router-dom";
   import LabelInput from "../../components/label-input/labelInput";
   import { useState } from "react";
   
@@ -38,6 +39,9 @@ import {
               onChange={onPasswordChange}
             />
           </StyledDiv>
+           <div>
+          <Link to={"/signup"}>რეგისტრაცია</Link>{" "}
+        </div>
           
             <StyledButton>შესვლა</StyledButton>
           
