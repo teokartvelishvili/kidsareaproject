@@ -41,15 +41,10 @@
     text-decoration: none;
 }
 
-link {
-    text-decoration: none;
-    color: brown;
-    background-color: aqua;
-}
 
 
 .lightMode {
-    background: url(../image/169367.png) no-repeat;
+    background: url(../image/sun-icon.png) no-repeat;
     background-size: cover;
 
 }
@@ -63,7 +58,7 @@ link {
     display: none;
 }
 
-.lightMode:hover, .darkMode:hover {
+.lightMode:hover, .darkMode:hover, .home:hover{
     cursor: pointer;
     transform: scale(1.05);
     transition: transform 0.2s ease; 
@@ -77,16 +72,16 @@ link {
 }
 
 .GeoFlag {
-    background: url(../image/g887.png) no-repeat;
+    background: url(../image/geFlag.png) no-repeat;
     background-size: cover;
 }
 
-.UsaFlag {
-    background: url(../image/197374.png) no-repeat;
+.EnFlag {
+    background: url(../image/enFlag.png) no-repeat;
     background-size: cover;
 }
 
-.GeoFlag:hover, .UsaFlag:hover {
+.GeoFlag:hover, .EnFlag:hover {
     cursor: pointer;
     transform: scale(1.05);
     transition: transform 0.2s ease; 
