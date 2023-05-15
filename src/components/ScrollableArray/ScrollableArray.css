@@ -1,0 +1,23 @@
+.scrollable-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .scrollable-array {
+    width: 100%; /* Set the desired width for the scrollable array */
+    overflow: hidden;
+    background-color: rgb(206, 255, 127);
+  }
+  
+  .scrollable-content {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .scrollable-content > div {
+    width: 200px; /* Set the desired width for each item */
+    border: 3px solid red;
+    height: 200px;
+    margin: 5px;
+    /* Add any other styling you need for each item */
+  }

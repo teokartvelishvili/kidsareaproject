@@ -1,3 +1,4 @@
+import React from "react";
 const LabelInputs = (props) => {
   const labelText = props.labelText;
   const type = props.type;

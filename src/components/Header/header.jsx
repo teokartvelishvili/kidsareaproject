@@ -1,8 +1,9 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { useContext } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
-import { TEXTS } from '../../Languages';
+import React from "react";
+import { TEXTS } from "../../Languages.js";
 import {
   StyledThemeMainDiv,
   StyledlightModeDiv,
@@ -11,16 +12,14 @@ import {
   StyledGeoFlagDiv,
   StyledEnFlagDiv 
 } from "./header.styled";
-import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
+import { AiOutlineUser } from 'react-icons/ai'
 
 import { ThemeContext } from "../../ThemeContext";
 import { LanguageContext } from "../../LanguageContext";
 
 const Header = () => {
 
-  // return <div>hello</div>;
-
-  // const [language, setLanguage] = useState('ge');
+  const  {language} = useContext(LanguageContext);
 
   const themeContext = useContext(ThemeContext);
   const langContext = useContext(LanguageContext);
@@ -34,12 +33,13 @@ const Header = () => {
   const geoOnClick  = () => {
       langContext.setLanguage("ge");
   };
-  const EnOnClick  = () => {
+  const enOnClick  = () => {
       langContext.setLanguage("en");   
   };
 
   
   return (
+    
 
     <div>
       <div className="Header">
@@ -50,12 +50,12 @@ const Header = () => {
           </Link>
         </div>
 
-       
-
         
         <div className='signInButt'>
           <Link to={"/signin"} className="no-decoration"><AiOutlineUser/>
-          შესვლა</Link>
+          {TEXTS[language].signInHeader}
+          </Link>
+          
         </div>
 
         <StyledThemeMainDiv>
@@ -85,7 +85,7 @@ const Header = () => {
 
             <StyledEnFlagDiv 
             className={"EnFlag " + (langContext.language === "en" ? "unvisible" : "")}
-            onClick={EnOnClick} > </StyledEnFlagDiv>
+            onClick={enOnClick} > </StyledEnFlagDiv>
         </StyledMainLangDiv>
 
 

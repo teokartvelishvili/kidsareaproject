@@ -31,8 +31,9 @@ import './App.css';
 // import Login from './pages/login/Login';
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from 'react';
+import React from "react";
 // import SwitchLanguage from './components/switchLanguage/SwitchLanguage';
-// import { LanguageContext } from './LanguageContext';
+import { LanguageContext } from './LanguageContext';
 import { ThemeContext } from './ThemeContext';
 import Layout from './components/Layout/layout';
 import SignUp from './pages/sign-up/signUp';
@@ -76,14 +77,16 @@ import {  createBrowserRouter,
 
   function App() {
 
-    // const [language, setLanguage] = useState('ge');
+    const [language, setLanguage] = useState('ge');
     const [theme, setTheme] = useState('light');
   
     return (
     
       <ThemeContext.Provider value = {{theme, setTheme}}>
+      <LanguageContext.Provider value={{ language, setLanguage }}>
   
         <RouterProvider router={router} />;
+        </LanguageContext.Provider>
       </ThemeContext.Provider>
   
     );

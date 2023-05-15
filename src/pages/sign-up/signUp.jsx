@@ -7,6 +7,7 @@ import {
 } from "./signUp.styled";
 import LabelInput from "../../components/label-input/labelInput";
 import { useState } from "react";
+import React from "react";
 
 const SignUp = () => {
     const [name, setName] = useState("");
