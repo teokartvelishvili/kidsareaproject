@@ -39,7 +39,7 @@ return (
         <Carousel headerText={TEXTS[language].fun} backgroundColor="rgb(189, 35, 61)" />
         <Carousel headerText={TEXTS[language].sport} backgroundColor="rgb(51, 51, 245)" />
       </div>
-      <Footer/>
+      {/* <Footer/> */}
 
 
     {/* <ScrollableArray />, */}

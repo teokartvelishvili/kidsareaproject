@@ -1,4 +1,5 @@
 import './index.css';
+import night from "./components/image/night WP.jpg"
 
 export const THEME = {
     dark : {

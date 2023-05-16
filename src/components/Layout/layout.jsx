@@ -1,4 +1,4 @@
-import { StyeldBgWrapper } from "./layout.Styled";
+import { StyeldBgWrapper} from "./layout.Styled";
 import React from "react";
 import Header from "../Header/header";
 // import { useState } from 'react';
@@ -20,7 +20,7 @@ const Layout = (props) => {
 
       {props.children}
       
-      {/* <Footer/> */}
+      <Footer/>
     </StyeldBgWrapper>
 
    
