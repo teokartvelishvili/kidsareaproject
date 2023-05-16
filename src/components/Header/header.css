@@ -16,6 +16,9 @@
     background-color: inherit;
 
 } */
+.mainDiv {
+    width: 100%;
+}
 
 .Header {
     display: flex;
@@ -36,6 +39,11 @@
     
     padding: 3px; 
     background-color: inherit;
+}
+.home {
+    width: 30%;
+    height: 70%;
+    margin: 10px 0 0 10px;
 }
 .no-decoration {
     text-decoration: none;
@@ -64,11 +72,14 @@
     transition: transform 0.2s ease; 
 }
 .kidsAreaLogo {
-    height:67px;
-    width: 382px;
+    height:100%;
+    width: 100%;
     background-image: url(../image/kidsAreaLogo.png);
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: contain;
+}
+.kidsAreaLogo > image {
+    
 }
 
 .GeoFlag {

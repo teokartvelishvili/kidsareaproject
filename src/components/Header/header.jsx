@@ -41,7 +41,7 @@ const Header = () => {
   return (
     
 
-    <div>
+    <div className="mainDiv">
       <div className="Header">
         <div className='home'>
           <Link to={"/"}>

@@ -8,6 +8,7 @@ import { TEXTS } from "../../Languages";
 // import ScrollableArray from "../../components/ScrollableArray/ScrollableArray";
 import Slider from "../../components/SlideShow/SlideShow";
 import Carousel from "../../components/carousel/Carousel.jsx";
+import Footer from "../../components/footer/footer";
 
 // import SimpleSlider from "../../components/SlideShow/SlideShow"
 
@@ -32,12 +33,13 @@ return (
     {/* <SimpleSlider/> */}
     <Slider/>
     <div>
-        <Carousel headerText="საბავშვო ბაღი" backgroundColor="yellow" />
-        <Carousel headerText="სკოლა" backgroundColor="chartreuse" />
-        <Carousel headerText="დაბადების დღის ცენტრი" backgroundColor="orange" />
-        <Carousel headerText="გართობა" backgroundColor="rgb(189, 35, 61)" />
-        <Carousel headerText="სპორტი" backgroundColor="rgb(51, 51, 245)" />
+        <Carousel headerText={TEXTS[language].kindergarten} backgroundColor="yellow" />
+        <Carousel headerText={TEXTS[language].school} backgroundColor="chartreuse" />
+        <Carousel headerText={TEXTS[language].bDay} backgroundColor="orange" />
+        <Carousel headerText={TEXTS[language].fun} backgroundColor="rgb(189, 35, 61)" />
+        <Carousel headerText={TEXTS[language].sport} backgroundColor="rgb(51, 51, 245)" />
       </div>
+      <Footer/>
 
 
     {/* <ScrollableArray />, */}
