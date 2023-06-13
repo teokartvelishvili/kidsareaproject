@@ -4,6 +4,7 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import React from "react";
 import { TEXTS } from "../../Languages.js";
+// import { Search } from "../search/Search";
 import {
   StyledThemeMainDiv,
   StyledlightModeDiv,
@@ -13,7 +14,6 @@ import {
   StyledEnFlagDiv 
 } from "./header.styled";
 import { AiOutlineUser } from 'react-icons/ai'
-
 import { ThemeContext } from "../../ThemeContext";
 import { LanguageContext } from "../../LanguageContext";
 
@@ -43,12 +43,14 @@ const Header = () => {
 
     <div className="mainDiv">
       <div className="Header">
-        <div className='home'>
+        <div className="home">
           <Link to={"/"}>
-          <div className="kidsAreaLogo">
-        </div>
+          <div className="kidsAreaLogo"></div>
           </Link>
         </div>
+
+        {/* <Search/> */}
+
 
         
         <div className='signInButt'>
@@ -58,6 +60,8 @@ const Header = () => {
           
         </div>
 
+
+        <div className="contIcons">
         <StyledThemeMainDiv>
           <StyledlightModeDiv
             className={
@@ -88,7 +92,7 @@ const Header = () => {
             onClick={enOnClick} > </StyledEnFlagDiv>
         </StyledMainLangDiv>
 
-
+        </div>
   
 
       </div>

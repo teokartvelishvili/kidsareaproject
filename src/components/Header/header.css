@@ -23,7 +23,7 @@
 .Header {
     display: flex;
     justify-content: space-between;
-    height: 115px;
+    height: 90px;
     font-size: 30px;
     /* box-shadow: 5px 5px 20px 5px; */
     background-color: inherit;
@@ -41,10 +41,19 @@
     background-color: inherit;
 }
 .home {
-    width: 30%;
-    height: 70%;
-    margin: 10px 0 0 10px;
+    width: 35vh;
+    height: 370px;
+    margin: 150px 0px 0px;
+    
 }
+.kidsAreaLogo {
+    height: 100%;
+    width: 180%;
+    background-image: url(../image/kidsAreaLogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .no-decoration {
     text-decoration: none;
 }
@@ -71,16 +80,7 @@
     transform: scale(1.05);
     transition: transform 0.2s ease; 
 }
-.kidsAreaLogo {
-    height:100%;
-    width: 100%;
-    background-image: url(../image/kidsAreaLogo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.kidsAreaLogo > image {
-    
-}
+
 
 .GeoFlag {
     background: url(../image/geFlag.png) no-repeat;
@@ -97,7 +97,9 @@
     transform: scale(1.05);
     transition: transform 0.2s ease; 
 }
-
+.contIcons {
+    display: flex;
+}
 /* .unvisible {
     display: none;
 } */

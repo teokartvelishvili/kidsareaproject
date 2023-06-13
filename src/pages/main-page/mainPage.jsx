@@ -8,7 +8,8 @@ import { TEXTS } from "../../Languages";
 // import ScrollableArray from "../../components/ScrollableArray/ScrollableArray";
 import Slider from "../../components/SlideShow/SlideShow";
 import Carousel from "../../components/carousel/Carousel.jsx";
-import Footer from "../../components/footer/footer";
+
+
 
 // import SimpleSlider from "../../components/SlideShow/SlideShow"
 
@@ -31,13 +32,15 @@ return (
     {/* <h1> {TEXTS[language].mainPageH1}</h1> */}
     {/* <SlideShow/> */}
     {/* <SimpleSlider/> */}
+
+
     <Slider/>
     <div>
-        <Carousel headerText={TEXTS[language].kindergarten} backgroundColor="yellow" />
-        <Carousel headerText={TEXTS[language].school} backgroundColor="chartreuse" />
-        <Carousel headerText={TEXTS[language].bDay} backgroundColor="orange" />
-        <Carousel headerText={TEXTS[language].fun} backgroundColor="rgb(189, 35, 61)" />
-        <Carousel headerText={TEXTS[language].sport} backgroundColor="rgb(51, 51, 245)" />
+        <Carousel headerText={TEXTS[language].kindergarten} backgroundColor="#3B8E52" />
+        <Carousel headerText={TEXTS[language].school} backgroundColor="#D9DD1E" />
+        <Carousel headerText={TEXTS[language].bDay} backgroundColor="#FF8351" />
+        <Carousel headerText={TEXTS[language].fun} backgroundColor="#FF5D55" />
+        <Carousel headerText={TEXTS[language].sport} backgroundColor="#3D8AF7" />
       </div>
       {/* <Footer/> */}
 

@@ -25,7 +25,7 @@ const divStyle = {
   justifyContent: "center",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  height: "400px",
+  height: "70vh",
   backgroundPosition: "center"
 
 };

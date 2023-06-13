@@ -1,8 +1,14 @@
+.Carousel {
+  display: grid;
+  /* align-items: center; */
+  justify-content: center;
+}
 .header {
-    background-color: rgb(4, 52, 4);
+    /* background-color: rgb(4, 52, 4); */
     height: 80px;
     width: 90vw;
-    margin-left: 5%;
+    border-radius: 10px;
+    /* margin-left: 5%; */
     
     color: white;
     font-size: 10px;
@@ -12,7 +18,10 @@
   }
   
   .item {
-    height: 150px;
+    /* height: 250px;  */
+    min-height: 10%;
+    max-height: 250px;
+
     min-width: 21%;
     padding: 30px;
   }
@@ -22,7 +31,7 @@
     height: 100%;
     border-radius: 2rem;
     pointer-events: none;
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
   }
   .inner-carousel {
     display: flex;
@@ -30,9 +39,10 @@
   .carousel1 {
     cursor: grab;
     overflow-x: hidden;
-    height: 250px;
+    /* height: 350px; */
     width: 90vw;
-    margin-left: 5%;
+    padding: 2% 0px 7% 0px;
+    /* margin-left: 5%; */
   }
   
   .btns button {
