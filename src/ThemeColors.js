@@ -3,7 +3,7 @@ import night from "./components/image/night WP.jpg"
 
 export const THEME = {
     dark : {
-        backgroundColor: "#121212",
+        backgroundColor: "rgb(47, 50, 49)",
         text: "#FFFFFF",
         inputBackground: "#333333",
         expensesBorders:"1px solid #2E2E2E",

@@ -1,5 +1,6 @@
 import "./footer.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
       <ul>
         <li>
           {" "}
-          <a href="url"> ჩვენს შესახებ </a>
+          <Link to={"/AboutUS"}> ჩვენს შესახებ </Link>
         </li>
         <li>
           {" "}

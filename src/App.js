@@ -11,6 +11,7 @@ import Layout from './components/Layout/layout';
 import SignUp from './pages/sign-up/signUp';
 import SignIn from './pages/sign-in/signIn';
 import MainPage from './pages/main-page/mainPage';
+import AboutUSPage from './pages/aboutUs/AboutUs';
 import {  createBrowserRouter,
   createRoutesFromElements,
   Route,
@@ -37,6 +38,13 @@ import {  createBrowserRouter,
         <Route path="/" element={(
           <Layout>
         <MainPage /> 
+        </Layout>
+        
+        )}
+        />
+        <Route path="/aboutUs" element={(
+          <Layout>
+        <AboutUSPage/> 
         </Layout>
         
         )}
