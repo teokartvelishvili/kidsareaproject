@@ -1,23 +1,22 @@
-
-
 .footer {
-    background-color:  #D9DD1E;
-    color: black;
-    position: absolute;
-    width: 100%;
-   
-    
-  }
-  ul {
-    list-style: none;
-    padding: 10px 100px 20px;
-    
-  }
-  li{
-    padding: 10px;
-  }
-  li a {
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-  }
+  background-color: #d9dd1e;
+  color: black;
+  position: absolute;
+  width: 100%;
+}
+
+.footerAbout {
+  background-color: blue !important;
+}
+ul {
+  list-style: none;
+  padding: 10px 100px 20px;
+}
+li {
+  padding: 10px;
+}
+li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
